@@ -797,6 +797,7 @@
             emailjs.sendForm('service_ink7061', 'template_9f6jj8n', this)
                 .then(function () {
                     alert('Message sent successfully!');
+                    e.target.reset(); 
                 }, function (error) {
                     alert('Failed to send message. Please try again.');
                     console.log(error);
